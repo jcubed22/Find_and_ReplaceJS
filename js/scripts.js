@@ -1,5 +1,5 @@
 var findReplace = function(string, findWord, replaceWord) {
-    var regex = new RegExp(findWord + 'gi');
-    string.replace(regex, replaceWord);
-    return string;
+    var regex = new RegExp(findWord, 'g');
+    var result = string.replace(regex, replaceWord);
+    return result;
 };
