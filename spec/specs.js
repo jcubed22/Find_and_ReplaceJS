@@ -10,4 +10,8 @@ describe('findReplace', function() {
     it("replaces a single word in a string", function() {
         expect(findReplace("Hello world", "world", "universe")).to.equal("Hello universe");
     });
+
+    it("replaces multiple words in a string with replacement word", function() {
+        expect(findReplace("Jingle bells, jingle bells", "bells", "balls")).to.equal("Jingle balls, jingle balls");
+    });
 });
