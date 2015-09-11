@@ -18,4 +18,8 @@ describe('findReplace', function() {
     it("replaces one word with multiple words", function() {
         expect(findReplace("I like candy", "candy", "sex, drugs, and rock and roll")).to.equal("I like sex, drugs, and rock and roll")
     });
+
+    it("replaces only whole word matches", function() {
+        expect(findReplace("I took my cat to the cathedral", "cat", "dog")).to.equal("I took my dog to the cathedral");
+    });
 });
