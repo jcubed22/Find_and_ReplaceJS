@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Find and Replace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find and Replace</h1>
+
+      <form id="replacer">
+        <div class="form-group">
+          <label for="string">Enter a short sentence:</label>
+          <input id="string" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="findWord">From the sentence above, which word would you like to replace?</label>
+            <input id="findWord" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="replaceWord">Enter another word you would like to replace it with:</label>
+            <input id="replaceWord" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Replace It!</button>
+      </form>
+
+
+      <div id="result">
+        <p>The original sentence was: "<span class="input_string"></span>"</p>
+        <p>The new sentence is: "<span class="output"></span>"</p>
+      </div>
+    </div>
+  </body>
+</html>
