@@ -22,4 +22,8 @@ describe('findReplace', function() {
     it("replaces only whole word matches", function() {
         expect(findReplace("I took my cat to the cathedral", "cat", "dog")).to.equal("I took my dog to the cathedral");
     });
+
+    it("replaces a word in a string, regardless of punctuation", function() {
+        expect(findReplace("Hello world.", "world", "universe")).to.equal("Hello universe.");
+    });
 });
