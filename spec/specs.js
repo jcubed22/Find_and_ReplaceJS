@@ -6,4 +6,8 @@ describe('findReplace', function() {
     it("replaces single letter with another letter", function() {
         expect(findReplace("j", "j", "z")).to.equal("z");
     });
+
+    it("replaces a single word in a string", function() {
+        expect(findReplace("Hello world", "world", "universe")).to.equal("Hello universe");
+    });
 });
