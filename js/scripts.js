@@ -18,6 +18,5 @@ $(function() {
         $(".output").text(output);
         $("#result").show();
         event.preventDefault();
-        debugger;
     });
 });
