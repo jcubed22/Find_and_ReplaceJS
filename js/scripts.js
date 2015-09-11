@@ -1,6 +1,5 @@
 var findReplace = function(string, findWord, replaceWord) {
-    var regex = new RegExp("\\b" + findWord + "\\b", 'g');
-    var result = string.replace(regex, replaceWord);
+    var result = string.replace(new RegExp("\\b" + findWord + "\\b", 'g'), replaceWord);
     return result;
 };
 
