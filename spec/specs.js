@@ -14,4 +14,8 @@ describe('findReplace', function() {
     it("replaces multiple words in a string with replacement word", function() {
         expect(findReplace("Jingle bells, jingle bells", "bells", "balls")).to.equal("Jingle balls, jingle balls");
     });
+
+    it("replaces one word with multiple words", function() {
+        expect(findReplace("I like candy", "candy", "sex, drugs, and rock and roll")).to.equal("I like sex, drugs, and rock and roll")
+    });
 });
